@@ -93,3 +93,21 @@ This will also update our package database with the Docker packages from the new
 Make sure you are about to install from the Docker repo instead of the default Ubuntu repo:
 
 `apt-cache policy docker-ce`
+
+
+## Build and Run your Docker images
+
+1- We are starting from the base image node:alpine.
+2- Set the working directory as /app/
+3- copy the package.json to install all the dependencies
+4- We need to install all the dependencies
+5- Exposing the port 3000
+6- Finally, we run the command npm start
+
+### Build Docker:
+
+`docker build -t react . `
+
+### Run Docker:
+
+`docker run -d --restart=always -p 3000:3000 react `
