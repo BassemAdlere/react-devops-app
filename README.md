@@ -70,20 +70,24 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-### Install Docker in your server
+## Install Docker in your server
 
 First, update your existing list of packages:
 
 `sudo apt update`
+
 Next, install a few prerequisite packages which let apt use packages over HTTPS:
 
 `sudo apt install apt-transport-https ca-certificates curl software-properties-common`
+
 Then add the GPG key for the official Docker repository to your system:
 
 `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
+
 Add the Docker repository to APT sources:
 
 `sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"`
+
 This will also update our package database with the Docker packages from the newly added repo.
 
 Make sure you are about to install from the Docker repo instead of the default Ubuntu repo:
